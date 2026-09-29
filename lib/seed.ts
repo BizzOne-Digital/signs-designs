@@ -43,6 +43,9 @@ async function replacePlaceholderServiceImages() {
   );
 
   await Promise.all([
+    ...DEFAULT_PORTFOLIO.filter((project) => isPublicRootImage(project.image)).map((project) =>
+      PortfolioProject.updateOne({ slug: project.slug, image: { $regex: PLACEHOLDER_PHOTO } }, { $set: { image: project.image } }),
+    ),
     ...DEFAULT_SERVICES.map((service) =>
       Service.updateOne({ slug: service.slug, image: { $regex: PLACEHOLDER_PHOTO } }, { $set: { image: service.image } }),
     ),

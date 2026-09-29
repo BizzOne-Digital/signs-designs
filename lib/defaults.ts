@@ -154,7 +154,7 @@ export const DEFAULT_PORTFOLIO: SeedProject[] = [
     category: "Commercial Graphics",
     description: "Branded menu boards and interior graphics that make ordering easy and reinforce the brand.",
     location: "Lakeshore, ON",
-    image: img("menuBoards", 1200),
+    image: "/home2.png",
     galleryImages: [],
     featured: true,
     sortOrder: 5,

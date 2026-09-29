@@ -76,7 +76,7 @@ export const PAGE_CONTENT = {
             type: "textarea",
             default: "Our goal is to help local businesses stand out with high-quality, custom visual solutions.",
           },
-          { key: "image", label: "Section image", type: "image", default: img("streetStorefront", 1400) },
+          { key: "image", label: "Section image", type: "image", default: "/home1.png" },
         ],
       },
       {
