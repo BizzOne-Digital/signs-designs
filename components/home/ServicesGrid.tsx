@@ -25,9 +25,9 @@ export function ServicesGrid({ eyebrow, title, intro, services }: ServicesGridPr
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {services.slice(0, 6).map((service, index) => (
-            <Reveal key={service.id} delay={(index % 3) * 90} className="h-full">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          {services.map((service, index) => (
+            <Reveal key={service.id} delay={(index % 4) * 80} className="h-full">
               <ServiceCard service={service} index={index} />
             </Reveal>
           ))}

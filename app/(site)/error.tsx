@@ -15,8 +15,8 @@ export default function SiteError({ error, reset }: { error: Error & { digest?: 
     <section className="flex min-h-[70svh] items-center bg-ink pt-28 pb-20 text-white">
       <div className="container-site">
         <p className="eyebrow mb-4 text-white/70">Something went wrong</p>
-        <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl">We couldn&apos;t load this page</h1>
-        <p className="mt-4 max-w-lg text-lg text-white/65">Please try again. If the problem continues, give us a call — we&apos;re happy to help.</p>
+        <h1 className="text-3xl font-extrabold tracking-tight sm:text-5xl">This page couldn&apos;t load</h1>
+        <p className="mt-4 max-w-lg text-lg text-white/65">Please try again. If the problem continues, give me a call. I&apos;m happy to help.</p>
         <div className="mt-9 flex flex-col gap-3 sm:flex-row">
           <Button size="lg" onClick={reset} icon={<RefreshCw className="size-4" aria-hidden="true" />}>
             Try Again

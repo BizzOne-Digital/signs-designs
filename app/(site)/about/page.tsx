@@ -15,9 +15,9 @@ import { getPageContent, getSiteSettings } from "@/lib/data";
 export const revalidate = 300;
 
 export const metadata: Metadata = {
-  title: "About Us — Local Sign Company in Tecumseh, Ontario",
+  title: "About Eric — Owner-Operated Sign Shop in Tecumseh, Ontario",
   description:
-    "Signs & Designs by Eric brings 32 years of sign industry experience to businesses in Windsor, Tecumseh and Essex County. Full-service sign design, fabrication and installation.",
+    "Meet Eric Marmus: 32+ years in the sign trade, running a home-based, owner-operated sign shop in Tecumseh. Direct communication and personal involvement from design to installation.",
   alternates: { canonical: "/about" },
   openGraph: { title: "About Signs & Designs by Eric", url: "/about" },
 };
@@ -28,7 +28,7 @@ export default async function AboutPage() {
 
   return (
     <>
-      <PageHero eyebrow="32 Years of Experience" title={t("hero.title")} subtitle={t("hero.subtitle")} image={t("hero.image")} breadcrumb="About">
+      <PageHero eyebrow="Owner-Operated · 32+ Years" title={t("hero.title")} subtitle={t("hero.subtitle")} image={t("hero.image")} breadcrumb="About">
         <ButtonLink href="/contact" size="lg" icon={<ArrowRight className="size-4" aria-hidden="true" />}>
           Request a Free Quote
         </ButtonLink>
@@ -44,7 +44,7 @@ export default async function AboutPage() {
       <WhyWorkWithUs />
       <QuoteCta
         title="Let's Build Something That Gets Noticed"
-        text="Tell us about your business and your space. We'll recommend the right signage and prepare a custom quote."
+        text="Tell me about your business and your space. I'll recommend the right signage and prepare a custom quote myself."
         phone={settings.phone}
       />
     </>

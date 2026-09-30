@@ -1,4 +1,4 @@
-import { Layers, Megaphone, PanelsTopLeft, PenTool, Printer, Store, Truck, Wrench, type LucideIcon } from "lucide-react";
+import { Building2, Layers, Megaphone, PanelsTopLeft, PenTool, Printer, Signpost, Store, Truck, Wrench, type LucideIcon } from "lucide-react";
 import type { ServiceIconKey } from "@/lib/constants";
 
 export const SERVICE_ICON_MAP: Record<ServiceIconKey, LucideIcon> = {
@@ -10,6 +10,8 @@ export const SERVICE_ICON_MAP: Record<ServiceIconKey, LucideIcon> = {
   wrench: Wrench,
   layers: Layers,
   printer: Printer,
+  building: Building2,
+  signpost: Signpost,
 };
 
 export const SERVICE_ICON_LABELS: Record<ServiceIconKey, string> = {
@@ -21,6 +23,8 @@ export const SERVICE_ICON_LABELS: Record<ServiceIconKey, string> = {
   wrench: "Installation",
   layers: "Layers",
   printer: "Printing",
+  building: "Development / real estate",
+  signpost: "Wayfinding / interior sign",
 };
 
 export function ServiceIcon({ icon, className = "size-6" }: { icon: ServiceIconKey; className?: string }) {

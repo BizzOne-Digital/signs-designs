@@ -33,7 +33,7 @@ export function LocalBusinessJsonLd({ settings }: { settings: SiteSettingsDTO })
       { "@type": "AdministrativeArea", name: "Essex County" },
     ],
     sameAs: settings.facebook ? [settings.facebook] : [],
-    knowsAbout: ["Custom signage", "Storefront signs", "Vehicle graphics", "Window graphics", "Sign installation", "Graphic design"],
+    knowsAbout: ["Custom signage", "Storefront signs", "Vehicle graphics", "Window graphics", "Development and real estate signs", "Interior signage", "Sign installation", "Graphic design"],
   };
   return <JsonLdScript data={data} />;
 }

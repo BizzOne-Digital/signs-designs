@@ -6,25 +6,25 @@ export const PROCESS_STEPS = [
   {
     number: "01",
     title: "Consultation",
-    text: "We learn about your business, visit or review the site, and recommend the right signage for your goals and budget.",
+    text: "I learn about your business, visit or review the site myself, and recommend the right signage for your goals and budget.",
     icon: MessagesSquare,
   },
   {
     number: "02",
     title: "Design",
-    text: "We prepare production-ready artwork and a clear proof. Nothing moves forward until you approve it.",
+    text: "I prepare production-ready artwork and a clear proof. Nothing moves forward until you approve it.",
     icon: PenTool,
   },
   {
     number: "03",
     title: "Production",
-    text: "Your signage is produced with commercial-grade materials selected for the location and lifespan you need.",
+    text: "I build your signage in my Tecumseh shop with commercial-grade materials selected for the location and lifespan you need.",
     icon: Factory,
   },
   {
     number: "04",
     title: "Installation",
-    text: "Our team installs on site — measured, mounted and aligned — for a clean, durable, professional finish.",
+    text: "Eric personally handles every installation on site. Each sign is measured, mounted and aligned by Eric for a clean, durable, professional finish.",
     icon: Wrench,
   },
 ];

@@ -16,10 +16,11 @@ export function FeaturedWork({ eyebrow, title, intro, projects }: FeaturedWorkPr
           <Reveal>
             <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />
           </Reveal>
-          <Reveal delay={100}>
-            <ButtonLink href="/contact" icon={<ArrowRight className="size-4" aria-hidden="true" />}>
-              Request a Free Quote
+          <Reveal delay={100} className="flex shrink-0 flex-col gap-3 sm:flex-row">
+            <ButtonLink href="/portfolio" variant="outline-dark" icon={<ArrowRight className="size-4" aria-hidden="true" />}>
+              View Full Portfolio
             </ButtonLink>
+            <ButtonLink href="/contact">Request a Free Quote</ButtonLink>
           </Reveal>
         </div>
         <PortfolioGallery projects={projects} />

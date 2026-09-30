@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
   const ip = getClientIp(request);
   const limit = await rateLimit("quote-submit", ip, 6, 60 * 60);
   if (!limit.allowed) {
-    return fail("You have sent several requests recently. Please call us at 519-739-1107 or try again later.", 429);
+    return fail("You have sent several requests recently. Please call Eric at 226-246-7697 or try again later.", 429);
   }
 
   const raw = await readJson(request);

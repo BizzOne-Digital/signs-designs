@@ -202,7 +202,7 @@ export function HeaderClient({ phone, email, facebook, logoUrl }: HeaderClientPr
             {facebook ? (
               <a href={facebook} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-1 text-sm text-white/70 hover:text-white">
                 <FacebookIcon className="size-4 text-brand" />
-                Follow us on Facebook
+                Follow Eric on Facebook
               </a>
             ) : null}
           </div>

@@ -115,7 +115,7 @@ export default async function BlogArticlePage({ params }: Props) {
               <div className="absolute top-0 left-0 h-1 w-full bg-brand" aria-hidden="true" />
               <p className="eyebrow mb-3 text-white/70">Free quote</p>
               <h2 className="text-2xl leading-tight font-extrabold">Planning a sign project?</h2>
-              <p className="mt-3 text-sm leading-6 text-white/65">Tell us what you need and we&apos;ll prepare a custom quote for your business.</p>
+              <p className="mt-3 text-sm leading-6 text-white/65">Tell me what you need and I&apos;ll prepare a custom quote for your business.</p>
               <div className="mt-6 flex flex-col gap-3">
                 <ButtonLink href="/contact" icon={<ArrowRight className="size-4" aria-hidden="true" />}>
                   Request a Free Quote

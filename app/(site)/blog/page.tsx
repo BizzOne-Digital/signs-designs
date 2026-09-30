@@ -6,14 +6,13 @@ import { BlogList } from "@/components/blog/BlogList";
 import { Reveal } from "@/components/ui/Reveal";
 import { contentText } from "@/lib/content-definitions";
 import { getPageContent, getPublishedPosts, getSiteSettings } from "@/lib/data";
-import { img } from "@/lib/placeholder-images";
 
 export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Signage Tips & Business Branding Blog",
   description:
-    "Practical advice on storefront signs, vehicle graphics, sign materials and local branding from a Windsor-Essex sign company with 32 years of experience.",
+    "Practical advice on storefront signs, vehicle graphics, sign materials and local branding from Eric, an owner-operated Windsor-Essex sign maker with 32+ years of experience.",
   alternates: { canonical: "/blog" },
   openGraph: { title: "Signage Tips & Business Branding Insights", url: "/blog" },
 };
@@ -26,7 +25,7 @@ export default async function BlogPage() {
 
   return (
     <>
-      <PageHero eyebrow="Insights" title={t("hero.title")} subtitle={t("hero.subtitle")} image={img("designDesk", 1600)} breadcrumb="Blog" />
+      <PageHero eyebrow="Insights" title={t("hero.title")} subtitle={t("hero.subtitle")} image="/ser2.png" breadcrumb="Blog" />
       <section className="bg-fog py-16 sm:py-20 lg:py-24">
         <div className="container-site">
           {featured ? (
@@ -51,7 +50,7 @@ export default async function BlogPage() {
       </section>
       <QuoteCta
         title="Planning a Sign Project?"
-        text="Skip the guesswork. Tell us what you need and we'll recommend the right signage for your space and budget."
+        text="Skip the guesswork. Tell me what you need and I'll recommend the right signage for your space and budget."
         phone={settings.phone}
       />
     </>

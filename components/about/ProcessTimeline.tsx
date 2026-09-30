@@ -11,8 +11,8 @@ export function ProcessTimeline() {
           <div className="lg:sticky lg:top-28">
             <SectionHeading
               eyebrow="Design • Production • Installation"
-              title="One Team From Start to Finish"
-              intro="No hand-offs between different companies. The people who design your sign are the people who build and install it."
+              title="You Work With One Person"
+              intro="No salespeople and no hand-offs. The person who designs your sign is the same person who builds and installs it: me."
             />
           </div>
         </Reveal>

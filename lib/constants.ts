@@ -3,7 +3,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3
 export const BUSINESS = {
   name: "Signs & Designs by Eric",
   owner: "Eric Marmus",
-  phone: "519-739-1107",
+  phone: "226-246-7697",
   email: "ericsm@mnsi.net",
   street: "12361 Lachance Crt.",
   city: "Tecumseh",
@@ -18,6 +18,7 @@ export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/services", label: "Services" },
+  { href: "/portfolio", label: "Portfolio" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ] as const;
@@ -28,6 +29,8 @@ export const QUOTE_SERVICE_OPTIONS = [
   "Window Vinyl",
   "Commercial Graphics",
   "Promotional Prints",
+  "Real Estate & Site Signs",
+  "Interior Signage",
   "Professional Installation",
   "Other",
 ] as const;
@@ -44,6 +47,8 @@ export const PORTFOLIO_CATEGORIES = [
   "Commercial Graphics",
   "Window Graphics",
   "Promotional Displays",
+  "Site & Real Estate Signs",
+  "Interior Signage",
   "Installation",
 ] as const;
 export type PortfolioCategory = (typeof PORTFOLIO_CATEGORIES)[number];
@@ -52,7 +57,7 @@ export const BLOG_CATEGORIES = [
   "Signage Tips",
   "Business Branding",
   "Vehicle Graphics",
-  "Our Process",
+  "How I Work",
   "Materials",
   "Local Marketing",
 ] as const;
@@ -60,7 +65,7 @@ export const BLOG_CATEGORIES = [
 export const BLOG_STATUSES = ["draft", "published"] as const;
 export type BlogStatus = (typeof BLOG_STATUSES)[number];
 
-export const SERVICE_ICONS = ["store", "pen-tool", "truck", "panels", "megaphone", "wrench", "layers", "printer"] as const;
+export const SERVICE_ICONS = ["store", "pen-tool", "truck", "panels", "megaphone", "wrench", "layers", "printer", "building", "signpost"] as const;
 export type ServiceIconKey = (typeof SERVICE_ICONS)[number];
 
 /** Maps a service slug to the matching quote-form dropdown option. */
@@ -70,6 +75,8 @@ export const SERVICE_TO_QUOTE_OPTION: Record<string, QuoteServiceOption> = {
   "vehicle-graphics-fleet-lettering": "Vehicle Graphics",
   "window-wall-floor-graphics": "Window Vinyl",
   "promotional-prints-event-displays": "Promotional Prints",
+  "development-real-estate-site-signs": "Real Estate & Site Signs",
+  "interior-signage": "Interior Signage",
   "professional-site-installation": "Professional Installation",
 };
 

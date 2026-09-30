@@ -25,13 +25,13 @@ export default function OpenGraphImage() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex", fontSize: 26, letterSpacing: 8, color: "#F20D16", fontWeight: 700, textTransform: "uppercase" }}>Windsor • Tecumseh • Essex County</div>
           <div style={{ display: "flex", flexDirection: "column", marginTop: 36, fontSize: 84, fontWeight: 900, lineHeight: 1, textTransform: "uppercase", maxWidth: 760 }}>
-            <span>Custom Signage That Gets Your</span>
-            <span style={{ color: "#F20D16" }}>Business Noticed.</span>
+            <span>Custom Signage Built by a</span>
+            <span style={{ color: "#F20D16" }}>Local Expert.</span>
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center", fontSize: 30, fontWeight: 700 }}>
           <span style={{ textTransform: "uppercase" }}>Signs &amp; Designs by Eric</span>
-          <span style={{ marginLeft: 28, color: "rgba(255,255,255,0.6)" }}>519-739-1107</span>
+          <span style={{ marginLeft: 28, color: "rgba(255,255,255,0.6)" }}>226-246-7697</span>
         </div>
       </div>
     ),

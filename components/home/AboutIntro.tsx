@@ -11,7 +11,7 @@ type AboutIntroProps = {
   image: string;
 };
 
-const POINTS = ["In-house design and production", "Commercial-grade, weather-ready materials", "Installed by the team that built it"];
+const POINTS = ["Designed and built by Eric", "Commercial-grade, weather-ready materials", "Personally installed by the person who built it"];
 
 export function AboutIntro({ eyebrow, title, text, text2, image }: AboutIntroProps) {
   return (
@@ -48,7 +48,7 @@ export function AboutIntro({ eyebrow, title, text, text2, image }: AboutIntroPro
           </ul>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
             <ButtonLink href="/about" variant="dark" icon={<ArrowRight className="size-4" aria-hidden="true" />}>
-              Learn More About Us
+              Learn More About Eric
             </ButtonLink>
             <ButtonLink href="/contact" variant="outline-dark">
               Request a Free Quote

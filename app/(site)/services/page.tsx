@@ -45,7 +45,7 @@ export default async function ServicesPage() {
   return (
     <>
       <JsonLdScript data={serviceJsonLd} />
-      <PageHero eyebrow="What We Do" title={t("hero.title")} subtitle={t("hero.subtitle")} image={t("hero.image")} breadcrumb="Services">
+      <PageHero eyebrow="What I Do" title={t("hero.title")} subtitle={t("hero.subtitle")} image={t("hero.image")} breadcrumb="Services">
         <ButtonLink href="/contact" size="lg" icon={<ArrowRight className="size-4" aria-hidden="true" />}>
           Request a Free Quote
         </ButtonLink>

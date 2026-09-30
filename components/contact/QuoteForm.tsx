@@ -45,7 +45,7 @@ function validate(values: Fields): FieldErrors {
   if (!values.email.trim()) errors.email = "Please enter your email address.";
   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(values.email.trim())) errors.email = "Enter a valid email address.";
   if (!values.service) errors.service = "Choose the service you need.";
-  if (values.message.trim().length < 10) errors.message = "Tell us a little about your project (at least 10 characters).";
+  if (values.message.trim().length < 10) errors.message = "Tell me a little about your project (at least 10 characters).";
   if (values.message.length > 5000) errors.message = "Please keep project details under 5000 characters.";
   if (values.businessName.length > 140) errors.businessName = "Business name is too long.";
   if (values.location.length > 160) errors.location = "Location is too long.";
@@ -122,7 +122,7 @@ export function QuoteForm({ email }: { email: string }) {
           setErrors(payload.fieldErrors);
           focusFirstError(payload.fieldErrors);
         }
-        const message = payload?.error || "We couldn't send your request. Please try again or call us.";
+        const message = payload?.error || "Your request couldn't be sent. Please try again or call me directly.";
         setFormError(message);
         toast.error(message);
         return;
@@ -156,7 +156,7 @@ export function QuoteForm({ email }: { email: string }) {
         </span>
         <h2 className="mt-6 text-2xl font-extrabold tracking-tight sm:text-3xl">Quote Request Received</h2>
         <p className="mx-auto mt-4 max-w-md leading-7 text-graphite/85">
-          Thank you, {values.name.split(" ")[0] || "and welcome"}. We&apos;ll review your project details and contact you by {values.preferredContact === "Either" ? "phone or email" : values.preferredContact.toLowerCase()} with a custom quote.
+          Thank you, {values.name.split(" ")[0] || "and welcome"}. I&apos;ll personally review your project details and contact you by {values.preferredContact === "Either" ? "phone or email" : values.preferredContact.toLowerCase()} with a custom quote.
         </p>
         <Button variant="outline-dark" className="mt-8" onClick={reset}>
           Send Another Request
@@ -319,7 +319,7 @@ export function QuoteForm({ email }: { email: string }) {
       ) : null}
 
       <div className="mt-8 flex flex-col gap-4 border-t border-ink/10 pt-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-xs leading-5 text-steel sm:max-w-xs">We use your details only to respond to this request. No spam, ever.</p>
+        <p className="text-xs leading-5 text-steel sm:max-w-xs">Your details go straight to Eric and are only used to respond to this request.</p>
         <Button
           type="submit"
           size="lg"

@@ -5,14 +5,13 @@ import { QuoteForm } from "@/components/contact/QuoteForm";
 import { ContactDetails } from "@/components/contact/ContactDetails";
 import { contentText } from "@/lib/content-definitions";
 import { getPageContent, getSiteSettings } from "@/lib/data";
-import { img } from "@/lib/placeholder-images";
 
 export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: "Request a Free Sign Quote — Windsor, Tecumseh & Essex County",
   description:
-    "Request a free quote for custom signs, storefront signage, vehicle graphics, window vinyl or sign installation. Call 519-739-1107 or send your project details online.",
+    "Request a free quote for custom signs, storefront signage, vehicle graphics, window vinyl or sign installation. Call Eric at 226-246-7697 or send your project details online.",
   alternates: { canonical: "/contact" },
   openGraph: { title: "Get a Free Quote | Signs & Designs by Eric", url: "/contact" },
 };
@@ -27,7 +26,7 @@ export default async function ContactPage() {
 
   return (
     <>
-      <PageHero eyebrow="Contact / Request a Quote" title={t("hero.title")} subtitle={t("hero.subtitle")} image={img("menuBoards", 1600)} breadcrumb="Contact" />
+      <PageHero eyebrow="Contact / Request a Quote" title={t("hero.title")} subtitle={t("hero.subtitle")} image="/home2.png" breadcrumb="Contact" />
       <section className="relative bg-fog py-16 sm:py-20 lg:py-24">
         <div className="bg-grid-light absolute inset-0" aria-hidden="true" />
         <div className="container-site relative grid gap-8 lg:grid-cols-12 lg:gap-10">

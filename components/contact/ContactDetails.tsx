@@ -5,9 +5,9 @@ import { telHref } from "@/lib/format";
 import type { SiteSettingsDTO } from "@/lib/types";
 
 const NEXT_STEPS = [
-  "We review your project details and any files you send.",
-  "We contact you to ask questions or arrange a site visit if needed.",
-  "You receive a clear, custom quote — no obligation.",
+  "I personally review your project details and any files you send.",
+  "I contact you directly to ask questions or arrange a site visit.",
+  "You receive a clear, custom quote from me, with no obligation.",
 ];
 
 export function ContactDetails({ settings, title, text }: { settings: SiteSettingsDTO; title: string; text: string }) {
@@ -69,7 +69,7 @@ export function ContactDetails({ settings, title, text }: { settings: SiteSettin
                   </span>
                   <span>
                     <span className="block text-[0.7rem] font-bold tracking-[0.18em] text-white/50 uppercase">Facebook</span>
-                    <span className="font-display font-bold text-white group-hover:text-brand-bright">See our latest projects</span>
+                    <span className="font-display font-bold text-white group-hover:text-brand-bright">See my latest projects</span>
                   </span>
                 </a>
               </li>
@@ -91,7 +91,7 @@ export function ContactDetails({ settings, title, text }: { settings: SiteSettin
             </li>
           ))}
         </ol>
-        <p className="mt-6 border-t border-ink/10 pt-5 text-xs leading-5 text-steel">Serving Windsor, Tecumseh and all of Essex County.</p>
+        <p className="mt-6 border-t border-ink/10 pt-5 text-xs leading-5 text-steel">Owner-operated from Tecumseh, serving all of Windsor-Essex.</p>
       </div>
     </aside>
   );

@@ -1,6 +1,5 @@
 import type { PageContentType } from "@/models/PageContent";
 import type { PageContentValues } from "@/lib/types";
-import { img } from "@/lib/placeholder-images";
 
 export interface ContentField {
   key: string;
@@ -36,14 +35,14 @@ export const PAGE_CONTENT = {
         label: "Hero",
         fields: [
           { key: "eyebrow", label: "Location label", type: "text", default: "Windsor • Tecumseh • Essex County" },
-          { key: "title", label: "Headline", type: "text", default: "Custom Signage That Gets Your" },
-          { key: "highlight", label: "Highlighted words (red)", type: "text", default: "Business Noticed." },
+          { key: "title", label: "Headline", type: "text", default: "Custom Signage Built by a" },
+          { key: "highlight", label: "Highlighted words (red)", type: "text", default: "Local Expert." },
           {
             key: "subtitle",
             label: "Sub-headline",
             type: "textarea",
             default:
-              "From expert graphic design to high-impact storefront signs and vehicle graphics, we design, fabricate, and install durable visual solutions that make your business stand out across Windsor, Tecumseh and Essex County.",
+              "Get regular sign-shop capabilities with the dedicated attention of an owner-operator. With over 32 years of hands-on experience, I personally design, build, and install durable visual solutions that get your Windsor-Essex business noticed.",
           },
           { key: "primaryCta", label: "Primary button", type: "text", default: "Request a Free Quote" },
           { key: "secondaryCta", label: "Secondary button", type: "text", default: "Explore Services" },
@@ -52,7 +51,7 @@ export const PAGE_CONTENT = {
             key: "trust",
             label: "Trust indicators",
             type: "json",
-            default: ["32+ Years Experience", "12+ Years in Business", "Local Windsor-Essex Service", "Design • Fabrication • Installation"],
+            default: ["32+ Years Hands-On Experience", "Owner-Operated Tecumseh Shop", "Deal Directly With Eric", "Design • Build • Install"],
             help: "One per line. Keep each short.",
           },
         ],
@@ -62,19 +61,19 @@ export const PAGE_CONTENT = {
         label: "About intro",
         fields: [
           { key: "eyebrow", label: "Eyebrow", type: "text", default: "32 Years of Experience" },
-          { key: "title", label: "Heading", type: "text", default: "Your Local Signage & Graphics Experts" },
+          { key: "title", label: "Heading", type: "text", default: "Your Local, Owner-Operated Sign Shop" },
           {
             key: "text",
             label: "Paragraph 1",
             type: "textarea",
             default:
-              "With 32 years of experience and 12 years in business, Signs & Designs by Eric is a full-service signage, graphic design and installation company serving Windsor and Essex County.",
+              "I'm Eric Marmus. I've spent more than 32 years in the sign trade, and for the last 12 I've run Signs & Designs by Eric from my home-based shop in Tecumseh, serving businesses across Windsor and Essex County.",
           },
           {
             key: "text2",
             label: "Paragraph 2",
             type: "textarea",
-            default: "Our goal is to help local businesses stand out with high-quality, custom visual solutions.",
+            default: "When you call, you talk to me. I design your sign, build it and install it myself, so you get sign-shop quality with one person accountable from start to finish.",
           },
           { key: "image", label: "Section image", type: "image", default: "/home1.png" },
         ],
@@ -83,14 +82,14 @@ export const PAGE_CONTENT = {
         id: "services",
         label: "Services section",
         fields: [
-          { key: "eyebrow", label: "Eyebrow", type: "text", default: "What We Do" },
+          { key: "eyebrow", label: "Eyebrow", type: "text", default: "What I Do" },
           { key: "title", label: "Heading", type: "text", default: "Signage Solutions Built for Business" },
           {
             key: "intro",
             label: "Intro",
             type: "textarea",
             default:
-              "Every project is designed, produced and installed with one goal: making your business easier to find, easier to remember and easier to choose.",
+              "I personally design, build and install every project with one goal: making your business easier to find, easier to remember and easier to choose.",
           },
         ],
       },
@@ -104,7 +103,7 @@ export const PAGE_CONTENT = {
             key: "intro",
             label: "Intro",
             type: "textarea",
-            default: "A look at the storefronts, vehicles and interiors we have helped local businesses brand across Windsor-Essex.",
+            default: "A look at signs, vehicles and interiors I've designed, built and installed for businesses across Windsor-Essex.",
           },
         ],
       },
@@ -117,22 +116,22 @@ export const PAGE_CONTENT = {
             key: "intro",
             label: "Intro",
             type: "textarea",
-            default: "One team handles your project from the first conversation to the final installed sign, so nothing gets lost between steps.",
+            default: "You work with one person, from the first conversation to the final installed sign, so nothing gets lost between steps.",
           },
         ],
       },
       {
         id: "stats",
-        label: "Why choose us",
+        label: "Why choose Eric",
         fields: [
           { key: "title", label: "Heading", type: "text", default: "Experience You Can See From the Street" },
           {
             key: "intro",
             label: "Intro",
             type: "textarea",
-            default: "Local businesses trust us because we know the materials, the installs and the region — and we stand behind the work.",
+            default: "Local businesses work with me because I know the materials, the installs and the region, and I personally stand behind every sign I put up.",
           },
-          { key: "image", label: "Background image", type: "image", default: img("fabrication", 1800) },
+          { key: "image", label: "Background image", type: "image", default: "/ourstory.png" },
         ],
       },
       {
@@ -140,7 +139,7 @@ export const PAGE_CONTENT = {
         label: "Closing call to action",
         fields: [
           { key: "title", label: "Heading", type: "text", default: "Ready to Make Your Business Stand Out?" },
-          { key: "text", label: "Text", type: "textarea", default: "Tell us about your signage project and we'll prepare a custom quote." },
+          { key: "text", label: "Text", type: "textarea", default: "Tell me about your signage project and I'll prepare a custom quote for you personally." },
         ],
       },
     ],
@@ -154,29 +153,29 @@ export const PAGE_CONTENT = {
         label: "Hero",
         fields: [
           { key: "title", label: "Heading", type: "text", default: "About Signs & Designs by Eric" },
-          { key: "subtitle", label: "Subtitle", type: "text", default: "Local experience. Professional craftsmanship. Built to last." },
-          { key: "image", label: "Hero image", type: "image", default: img("storefrontWindow", 1800) },
+          { key: "subtitle", label: "Subtitle", type: "text", default: "An owner-operated sign shop in Tecumseh. 32+ years of experience, and one person from design to installation." },
+          { key: "image", label: "Hero image", type: "image", default: "/ser1.png" },
         ],
       },
       {
         id: "story",
-        label: "Our story",
+        label: "About Eric",
         fields: [
-          { key: "eyebrow", label: "Eyebrow", type: "text", default: "Our Story" },
-          { key: "title", label: "Heading", type: "text", default: "Three Decades of Helping Local Businesses Get Seen" },
+          { key: "eyebrow", label: "Eyebrow", type: "text", default: "Meet Eric" },
+          { key: "title", label: "Heading", type: "text", default: "32+ Years of Sign Work. One Owner. Every Job." },
           {
             key: "intro",
             label: "Intro",
             type: "textarea",
             default:
-              "Signs & Designs by Eric was built on a simple idea: a local business deserves signage that looks professional, lasts for years and is handled by someone who picks up the phone.",
+              "I'm Eric Marmus, and Signs & Designs by Eric is my owner-operated sign shop. When you hire me, I'm the person you talk to, the person who designs your sign and the person who installs it.",
           },
           {
             key: "body",
             label: "Story",
             type: "textarea",
             default:
-              "Eric Marmus brings 32 years of hands-on experience in the sign industry, and for the last 12 years has run Signs & Designs by Eric out of Tecumseh, Ontario. Over that time we have designed, fabricated and installed storefront signs, vehicle graphics, window vinyl and promotional displays for businesses throughout Windsor and Essex County.\n\nBecause design, production and installation are handled by one team, you get one point of contact, clear pricing and a finished result that matches what was approved.",
+              "I've been in the sign trade for more than 32 years. For the last 12, I've run my own business from a home-based shop in Tecumseh, building storefront signs, vehicle graphics, window graphics, site signs and interior signage for businesses throughout Windsor and Essex County.\n\nYou deal directly with me from the first call. There's no salesperson and no hand-off to a crew. I'm personally involved in every step, from design to installation.\n\nRunning a home-based, owner-operated shop keeps my overhead low. That means fair pricing, quick answers, and a finished sign that matches exactly what you approved.",
           },
           { key: "image", label: "Story image", type: "image", default: "/ourstory.png" },
         ],
@@ -189,13 +188,13 @@ export const PAGE_CONTENT = {
             key: "text",
             label: "Experience text",
             type: "textarea",
-            default: "Experience matters in signage. It shows in material choices that survive Ontario winters, clean vinyl application and installs that stay level and secure for years.",
+            default: "After 32+ years, I know what lasts. It shows in material choices that survive Ontario winters, clean vinyl application, and installs I personally measure, mount and align so they stay level and secure for years.",
           },
         ],
       },
       {
         id: "approach",
-        label: "Our approach",
+        label: "My approach",
         fields: [
           { key: "title", label: "Heading", type: "text", default: "Practical Advice. Precise Work." },
           {
@@ -203,7 +202,7 @@ export const PAGE_CONTENT = {
             label: "Text",
             type: "textarea",
             default:
-              "We start by understanding your business, your location and your budget. Then we recommend the signage that will do the most work for you — not the most expensive option. Every proof is reviewed with you before anything goes into production.",
+              "I start by understanding your business, your location and your budget. Then I recommend the signage that will do the most work for you, not the most expensive option. I review every proof with you personally before anything goes into production.",
           },
           { key: "image", label: "Section image", type: "image", default: "/ourapproach.png" },
         ],
@@ -212,13 +211,13 @@ export const PAGE_CONTENT = {
         id: "serviceArea",
         label: "Service area",
         fields: [
-          { key: "title", label: "Heading", type: "text", default: "Proudly Serving Windsor-Essex" },
+          { key: "title", label: "Heading", type: "text", default: "A Tecumseh Shop, Serving All of Windsor-Essex" },
           {
             key: "text",
             label: "Text",
             type: "textarea",
             default:
-              "Based in Tecumseh, we work with businesses across Windsor, Tecumseh, Lakeshore, LaSalle, Amherstburg, Belle River, Kingsville, Leamington and the rest of Essex County.",
+              "My shop is home-based in Tecumseh. That means direct communication with the owner and low overhead that keeps pricing fair. I work with businesses across Windsor, Tecumseh, Lakeshore, LaSalle, Amherstburg, Belle River, Kingsville, Leamington and the rest of Essex County.",
           },
         ],
       },
@@ -237,9 +236,9 @@ export const PAGE_CONTENT = {
             key: "subtitle",
             label: "Subtitle",
             type: "textarea",
-            default: "Complete design, production and installation solutions for businesses across Windsor and Essex County.",
+            default: "Design, production and installation, personally handled by Eric for businesses across Windsor and Essex County.",
           },
-          { key: "image", label: "Hero image", type: "image", default: img("retailArcade", 1800) },
+          { key: "image", label: "Hero image", type: "image", default: "/ser6.png" },
         ],
       },
       {
@@ -251,7 +250,7 @@ export const PAGE_CONTENT = {
             key: "text",
             label: "Text",
             type: "textarea",
-            default: "If you can picture it, we can help design, build and install it. Send us the details and we will prepare a custom quote.",
+            default: "If you can picture it, I can help design, build and install it. Send me the details and I'll prepare a custom quote.",
           },
         ],
       },
@@ -270,7 +269,7 @@ export const PAGE_CONTENT = {
             key: "subtitle",
             label: "Description",
             type: "textarea",
-            default: "Tell us about your project and we'll get back to you with a custom quote.",
+            default: "Tell me about your project and I'll get back to you personally with a custom quote.",
           },
         ],
       },
@@ -278,13 +277,33 @@ export const PAGE_CONTENT = {
         id: "details",
         label: "Contact details panel",
         fields: [
-          { key: "title", label: "Heading", type: "text", default: "Talk to a Local Sign Expert" },
+          { key: "title", label: "Heading", type: "text", default: "Talk Directly With Eric" },
           {
             key: "text",
             label: "Text",
             type: "textarea",
-            default: "Prefer to talk it through? Call or email and we will help you figure out the right signage for your space and budget.",
+            default: "Prefer to talk it through? Call or email me directly. You'll reach the owner, not a call centre, and I'll help you figure out the right signage for your space and budget.",
           },
+        ],
+      },
+    ],
+  },
+  portfolio: {
+    label: "Portfolio",
+    path: "/portfolio",
+    sections: [
+      {
+        id: "hero",
+        label: "Hero",
+        fields: [
+          { key: "title", label: "Heading", type: "text", default: "Portfolio & Gallery" },
+          {
+            key: "subtitle",
+            label: "Subtitle",
+            type: "textarea",
+            default: "Completed work across every service: storefront and site signs, vehicle graphics, window and interior signage, displays and installations.",
+          },
+          { key: "image", label: "Hero image", type: "image", default: "/hero.png" },
         ],
       },
     ],
@@ -302,7 +321,7 @@ export const PAGE_CONTENT = {
             key: "subtitle",
             label: "Subtitle",
             type: "textarea",
-            default: "Practical advice on signs, vehicle graphics and local branding from a Windsor-Essex sign shop with 32 years of experience.",
+            default: "Practical advice on signs, vehicle graphics and local branding from Eric, a Windsor-Essex sign maker with 32+ years of experience.",
           },
         ],
       },

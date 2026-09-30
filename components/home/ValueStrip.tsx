@@ -2,10 +2,10 @@ import { MapPin, PenTool, ShieldCheck, Wrench } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 
 const VALUES = [
-  { icon: PenTool, title: "Custom Design", text: "Artwork built around your brand and your location." },
+  { icon: PenTool, title: "Custom Design", text: "Artwork I create around your brand and your location." },
   { icon: ShieldCheck, title: "Commercial-Grade Materials", text: "Built for Ontario weather and years of daily use." },
-  { icon: Wrench, title: "Professional Installation", text: "Measured, mounted and aligned by our own team." },
-  { icon: MapPin, title: "Local Windsor-Essex Service", text: "Based in Tecumseh. Easy to reach, quick to respond." },
+  { icon: Wrench, title: "Professional Installation", text: "Personally measured, mounted, and aligned by Eric." },
+  { icon: MapPin, title: "Direct, Low-Overhead Service", text: "Home-based in Tecumseh. You talk to the owner, and low overhead keeps pricing fair." },
 ];
 
 export function ValueStrip() {

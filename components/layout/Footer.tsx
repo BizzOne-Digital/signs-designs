@@ -13,6 +13,8 @@ const SERVICE_LINKS = [
   { label: "Commercial Graphics", href: "/services#custom-graphic-sign-design" },
   { label: "Window Graphics", href: "/services#window-wall-floor-graphics" },
   { label: "Promotional Prints", href: "/services#promotional-prints-event-displays" },
+  { label: "Site & Real Estate Signs", href: "/services#development-real-estate-site-signs" },
+  { label: "Interior Signage", href: "/services#interior-signage" },
   { label: "Installation", href: "/services#professional-site-installation" },
 ];
 
@@ -33,7 +35,7 @@ export function Footer({ settings }: { settings: SiteSettingsDTO }) {
               <Logo logoUrl={settings.logo} className="h-16 sm:h-20" />
             </Link>
             <p className="mt-6 max-w-sm text-sm leading-7 text-white/60">
-              Full-service custom signage, graphic design, fabrication and installation for businesses across Windsor, Tecumseh and Essex County.
+              An owner-operated sign shop in Tecumseh. Eric personally designs, builds and installs custom signage for businesses across Windsor and Essex County.
             </p>
             <div className="mt-7">
               <ButtonLink href="/contact" icon={<ArrowRight className="size-4" aria-hidden="true" />}>
@@ -43,7 +45,7 @@ export function Footer({ settings }: { settings: SiteSettingsDTO }) {
           </div>
 
           <div className="lg:col-span-2">
-            <FooterHeading>Company</FooterHeading>
+            <FooterHeading>Explore</FooterHeading>
             <ul className="space-y-3 text-sm">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>

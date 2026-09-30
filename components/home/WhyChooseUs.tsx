@@ -3,10 +3,10 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SiteImage } from "@/components/ui/SiteImage";
 
 export const STATS = [
-  { value: "32", suffix: "+", label: "Years Experience", text: "Hands-on sign industry experience behind every project." },
-  { value: "12", suffix: "+", label: "Years in Business", text: "Serving Windsor-Essex businesses from our Tecumseh shop." },
-  { value: "6", suffix: "+", label: "Core Signage Services", text: "Design, storefront, vehicle, window, print and installation." },
-  { value: "Local", suffix: "", label: "Windsor-Essex Service", text: "A local team you can call, meet and count on." },
+  { value: "32", suffix: "+", label: "Years Experience", text: "Hands-on sign experience behind every job I take on." },
+  { value: "12", suffix: "+", label: "Years in Business", text: "Running my own home-based shop in Tecumseh." },
+  { value: "8", suffix: "", label: "Signage Services", text: "Storefront, design, vehicle, window, print, site, interior and installation." },
+  { value: "1", suffix: "", label: "Point of Contact", text: "You deal with Eric directly, from the first call to the final install." },
 ];
 
 export function WhyChooseUs({ title, intro, image }: { title: string; intro: string; image: string }) {
@@ -17,7 +17,7 @@ export function WhyChooseUs({ title, intro, image }: { title: string; intro: str
       <div className="absolute top-0 left-0 -z-10 h-full w-2 bg-brand" aria-hidden="true" />
       <div className="container-site">
         <Reveal>
-          <SectionHeading eyebrow="Why Choose Us" title={title} intro={intro} tone="dark" />
+          <SectionHeading eyebrow="Why Choose Eric" title={title} intro={intro} tone="dark" />
         </Reveal>
         <ul className="mt-14 grid gap-px overflow-hidden rounded-[var(--radius-card)] border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {STATS.map((stat, index) => (
