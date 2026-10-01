@@ -21,10 +21,6 @@ export function OurStory({ eyebrow, title, intro, body, image }: OurStoryProps) 
         <Reveal delay={120} className="relative lg:col-span-5">
           <div className="clip-angle-tl relative aspect-[4/5] overflow-hidden bg-fog shadow-lift lg:sticky lg:top-28">
             <SiteImage src={image} alt="Sign fabrication work in progress" fill sizes="(min-width: 1024px) 38vw, 92vw" className="object-cover" />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-6 pt-20">
-              <p className="font-display text-sm font-bold tracking-[0.18em] text-white uppercase">Eric Marmus</p>
-              <p className="text-sm text-white/70">Owner, Signs &amp; Designs by Eric</p>
-            </div>
           </div>
         </Reveal>
       </div>
